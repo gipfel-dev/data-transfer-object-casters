@@ -59,11 +59,3 @@ test('bool caster casts false false', function () {
 
     expect($caster->cast($value))->toBeFalse();
 });
-
-test('bool caster casts any value false', function () {
-    $value = 'this is any value';
-
-    $caster = new BoolCaster();
-
-    expect($caster->cast($value))->toBeFalse();
-});
