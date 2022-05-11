@@ -1,0 +1,31 @@
+{
+  "name": "gipfel-dev/data-transfer-object-casters",
+  "type": "library",
+  "license": "ISC",
+  "version": "1.0.0",
+  "autoload": {
+    "psr-4": {
+      "Gipfel\\DataTransferObjectCasters\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Alexander Gaal",
+      "email": "alexander.gaal@gipfel.dev"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "spatie/data-transfer-object": "^3.7"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Regnerisch\\LaravelBeyond\\LaravelBeyondServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "pestphp/pest": "^1.21"
+  }
+}
