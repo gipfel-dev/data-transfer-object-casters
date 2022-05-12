@@ -16,16 +16,17 @@
   ],
   "require": {
     "php": "^8.0",
-    "spatie/data-transfer-object": "^3.7"
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Regnerisch\\LaravelBeyond\\LaravelBeyondServiceProvider"
-      ]
-    }
+    "spatie/data-transfer-object": "^3.7",
+    "nesbot/carbon": "^2.58",
+    "illuminate/support": "^9.12",
+    "illuminate/database": "^9.12"
   },
   "require-dev": {
     "pestphp/pest": "^1.21"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
   }
 }
