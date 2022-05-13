@@ -8,8 +8,8 @@ use Spatie\DataTransferObject\Caster;
 class CarbonCaster implements Caster
 {
     public function __construct(
-        protected string $type,
-        protected ?string $timezone = 'UTC',
+        protected string $types,
+        protected ?string $timezone = null,
         protected ?string $format = null
     ) {}
 
