@@ -6,7 +6,6 @@ use Spatie\DataTransferObject\Caster;
 
 class BoolCaster implements Caster
 {
-
     public function cast(mixed $value): bool
     {
         if ($value === 'off') {
@@ -15,5 +14,4 @@ class BoolCaster implements Caster
 
         return (bool) $value;
     }
-
 }
